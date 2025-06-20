@@ -6,7 +6,6 @@ export const userRegister = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const { data } = await api.post("/users/signup", userData);
-      console.log(data);
       setAuthHeader(data.token);
       return data;
     } catch (error) {
@@ -20,7 +19,6 @@ export const userLogin = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const { data } = await api.post("/users/login", userData);
-      console.log(data);
       setAuthHeader(data.token);
       return data;
     } catch (error) {
@@ -44,8 +42,7 @@ export const userLogout = createAsyncThunk(
 export const checkUserAuth = createAsyncThunk(
   "auth/currentUser",
   async (_, { getState, rejectWithValue }) => {
-    const state = getState();
-    const token = state.auth.token;
+    const token = getState().auth.token;
 
     if (!token) return rejectWithValue("No token");
 
