@@ -1,0 +1,36 @@
+.registrationPage {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .registrationPage {
+        padding: 0.75rem;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .registrationPage {
+        padding: 0.875rem;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .registrationPage {
+        padding: 1.125rem;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .registrationPage {
+        padding: 1.5rem;
+    }
+}

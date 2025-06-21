@@ -14,7 +14,7 @@ const LoginForm = () => {
     try {
       await dispatch(userLogin(values)).unwrap();
       actions.resetForm();
-      toast.success(`Welcome back, bro!`);
+      toast.success(`Welcome back! We've missed you!`);
     } catch (error) {
       toast.error(error.message);
     }

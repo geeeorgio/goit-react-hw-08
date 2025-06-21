@@ -15,7 +15,7 @@ const UserMenu = () => {
   const handleLogout = async () => {
     try {
       await dispatch(userLogout()).unwrap();
-      toast.success("Goodbye, bro!");
+      toast.success("Goodbye! See you next time!");
     } catch (error) {
       toast.error(error.message);
     }
@@ -23,18 +23,17 @@ const UserMenu = () => {
 
   return (
     <div className={s.userMenuWrapper}>
-
-    <Grid>
-      <GridItem>
-        <p className={s.welcomeText}>Welcome, {user.name}!</p>
-      </GridItem>
-      <GridItem>
-        <Button type="button" className={s.logOutBtn} onClick={handleLogout}>
-          <LogOut />
-          Log Out
-        </Button>
-      </GridItem>
-    </Grid>
+      <Grid>
+        <GridItem>
+          <p className={s.welcomeText}>Welcome, {user.name}!</p>
+        </GridItem>
+        <GridItem>
+          <Button type="button" className={s.logOutBtn} onClick={handleLogout}>
+            <LogOut />
+            Log Out
+          </Button>
+        </GridItem>
+      </Grid>
     </div>
   );
 };

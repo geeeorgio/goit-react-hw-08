@@ -1,10 +1,10 @@
 .wrapper {
-    margin: 2rem auto;
-    padding: 1rem;
     background-color: #fff;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
     border-radius: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    max-width: 400px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    max-width: 480px;
 }
 
 .form {
@@ -13,57 +13,50 @@
     gap: 1rem;
 }
 
-.title {
-    text-align: center;
-}
-
 .label {
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
 }
 
 .input {
-    padding: 0.75rem;
+    padding: 0.75rem 1rem;
     border: 1px solid #ccc;
     border-radius: 12px;
     font-size: 1rem;
-    background-color: #fefefe;
+    background-color: #f9f9f9;
 
     &:focus {
-        border-color: #007aff;
+        border-color: #555;
         outline: none;
     }
 }
 
 .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #007aff;
+    background-color: #444;
     color: white;
     padding: 0.75rem;
     border: none;
     border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s;
 
     &:hover {
-        background-color: #005fcb;
+        background-color: #2f2f2f;
     }
 }
 
 .error {
     color: crimson;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 /* Mobile Small (320px) */
 @media screen and (max-width: 320px) {
     .wrapper {
-        margin: 1rem auto;
-        padding: 0.75rem;
+        padding: 1rem;
+        margin: 0 auto 1.5rem;
         border-radius: 12px;
         max-width: 100%;
     }
@@ -72,16 +65,12 @@
         gap: 0.75rem;
     }
 
-    .title {
-        font-size: 1.2rem;
-    }
-
     .label {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     .input {
-        padding: 0.6rem;
+        padding: 0.6rem 0.8rem;
         border-radius: 8px;
         font-size: 0.9rem;
     }
@@ -90,19 +79,18 @@
         padding: 0.6rem;
         border-radius: 8px;
         font-size: 0.9rem;
-        gap: 8px;
     }
 
     .error {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 }
 
 /* Mobile Medium (375px) */
 @media screen and (min-width: 321px) and (max-width: 375px) {
     .wrapper {
-        margin: 1.5rem auto;
-        padding: 0.875rem;
+        padding: 1.25rem;
+        margin: 0 auto 1.75rem;
         border-radius: 14px;
         max-width: 100%;
     }
@@ -111,16 +99,12 @@
         gap: 0.875rem;
     }
 
-    .title {
-        font-size: 1.3rem;
-    }
-
     .label {
-        font-size: 0.875rem;
+        font-size: 0.95rem;
     }
 
     .input {
-        padding: 0.65rem;
+        padding: 0.65rem 0.9rem;
         border-radius: 10px;
         font-size: 0.95rem;
     }
@@ -129,37 +113,32 @@
         padding: 0.65rem;
         border-radius: 10px;
         font-size: 0.95rem;
-        gap: 9px;
     }
 
     .error {
-        font-size: 0.775rem;
+        font-size: 0.825rem;
     }
 }
 
 /* Tablet (768px) */
 @media screen and (min-width: 376px) and (max-width: 768px) {
     .wrapper {
-        margin: 2rem auto;
-        padding: 1.25rem;
+        padding: 1.375rem;
+        margin: 0 auto 2rem;
         border-radius: 16px;
-        max-width: 450px;
+        max-width: 520px;
     }
 
     .form {
         gap: 1.125rem;
     }
 
-    .title {
-        font-size: 1.4rem;
-    }
-
     .label {
-        font-size: 0.925rem;
+        font-size: 1rem;
     }
 
     .input {
-        padding: 0.75rem;
+        padding: 0.75rem 1rem;
         border-radius: 12px;
         font-size: 1rem;
     }
@@ -168,37 +147,32 @@
         padding: 0.75rem;
         border-radius: 12px;
         font-size: 1rem;
-        gap: 10px;
     }
 
     .error {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 }
 
 /* Laptop and larger */
 @media screen and (min-width: 769px) {
     .wrapper {
-        margin: 2.5rem auto;
         padding: 1.5rem;
+        margin: 0 auto 2rem;
         border-radius: 16px;
-        max-width: 500px;
+        max-width: 480px;
     }
 
     .form {
         gap: 1.25rem;
     }
 
-    .title {
-        font-size: 1.5rem;
-    }
-
     .label {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .input {
-        padding: 0.875rem;
+        padding: 0.875rem 1.125rem;
         border-radius: 12px;
         font-size: 1.05rem;
     }
@@ -207,7 +181,6 @@
         padding: 0.875rem;
         border-radius: 12px;
         font-size: 1.05rem;
-        gap: 12px;
     }
 
     .error {

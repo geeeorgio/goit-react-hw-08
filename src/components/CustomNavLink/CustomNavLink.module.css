@@ -9,3 +9,39 @@
     background-color: #969ea6;
     color: #fff
 }
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .item {
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .item {
+        padding: 12px;
+        border-radius: 7px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .item {
+        padding: 14px;
+        border-radius: 8px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .item {
+        padding: 16px;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
+}

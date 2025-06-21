@@ -1,7 +1,7 @@
 import s from "./GridItem.module.css";
 
-const GridItem = ({ children }) => {
-  return <li className={s.item}>{children}</li>;
+const GridItem = ({ className, children }) => {
+  return <li className={className ?? s.item}>{children}</li>;
 };
 
 export default GridItem;

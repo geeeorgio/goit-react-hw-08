@@ -3,3 +3,35 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .authWrapper {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .authWrapper {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .authWrapper {
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .authWrapper {
+        gap: 20px;
+        flex-wrap: nowrap;
+    }
+}

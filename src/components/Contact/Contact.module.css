@@ -1,0 +1,111 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.05rem;
+    color: #333;
+    font-weight: 500;
+
+    svg {
+        color: #555;
+    }
+}
+
+.button {
+    margin-top: 0.5rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #c0392b;
+    }
+}
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .info {
+        gap: 0.5rem;
+    }
+
+    .text {
+        gap: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .button {
+        margin-top: 0.4rem;
+        padding: 0.5rem;
+        font-size: 0.85rem;
+        border-radius: 8px;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .info {
+        gap: 0.55rem;
+    }
+
+    .text {
+        gap: 0.45rem;
+        font-size: 0.95rem;
+    }
+
+    .button {
+        margin-top: 0.45rem;
+        padding: 0.55rem;
+        font-size: 0.9rem;
+        border-radius: 9px;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .info {
+        gap: 0.6rem;
+    }
+
+    .text {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .button {
+        margin-top: 0.5rem;
+        padding: 0.6rem;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .info {
+        gap: 0.6rem;
+    }
+
+    .text {
+        gap: 0.5rem;
+        font-size: 1.05rem;
+    }
+
+    .button {
+        margin-top: 0.5rem;
+        padding: 0.6rem;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+}

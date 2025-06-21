@@ -1,5 +1,6 @@
 import * as Yup from "yup";
 
+// Registration Form
 export const registrationSchema = Yup.object({
   name: Yup.string()
     .required("Required")
@@ -21,6 +22,7 @@ export const registrationSchema = Yup.object({
     ),
 });
 
+// Login Form
 export const loginSchema = Yup.object({
   email: Yup.string()
     .required("Required")
@@ -35,4 +37,17 @@ export const loginSchema = Yup.object({
       /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/,
       "Password must contain uppercase, lowercase, number, and special character"
     ),
+});
+
+// Contacts Form
+export const contactsFormSchema = Yup.object({
+  name: Yup.string()
+    .required("Required")
+    .min(3, "Too short. Min 3 chars")
+    .max(50, "Max 50 chars"),
+
+  number: Yup.string()
+    .required("Required")
+    .min(3, "Too short. Min 3 chars")
+    .max(50, "Max 50 chars"),
 });

@@ -4,3 +4,35 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .list {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .list {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .list {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .list {
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+}

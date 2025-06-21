@@ -3,3 +3,35 @@
     padding: 0 1rem;
     margin: 0 auto;
 }
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .container {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .container {
+        max-width: 100%;
+        padding: 0 0.75rem;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 2rem;
+    }
+}

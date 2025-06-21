@@ -1,0 +1,114 @@
+.wrapper {
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+    margin: 0 auto 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444;
+}
+
+.input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #fafafa;
+
+    &:focus {
+        border-color: #777;
+        outline: none;
+    }
+}
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    .wrapper {
+        padding: 0.75rem 1rem;
+        margin: 0 auto 1.5rem;
+        border-radius: 12px;
+        max-width: 100%;
+        gap: 0.5rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+
+    .input {
+        padding: 0.6rem 0.8rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .wrapper {
+        padding: 0.875rem 1.125rem;
+        margin: 0 auto 1.75rem;
+        border-radius: 14px;
+        max-width: 100%;
+        gap: 0.625rem;
+    }
+
+    .label {
+        font-size: 0.95rem;
+    }
+
+    .input {
+        padding: 0.65rem 0.9rem;
+        border-radius: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .wrapper {
+        padding: 1rem 1.25rem;
+        margin: 0 auto 2rem;
+        border-radius: 16px;
+        max-width: 520px;
+        gap: 0.75rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    .input {
+        padding: 0.75rem 1rem;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    .wrapper {
+        padding: 1rem 1.25rem;
+        margin: 0 auto 2rem;
+        border-radius: 16px;
+        max-width: 480px;
+        gap: 0.75rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    .input {
+        padding: 0.875rem 1.125rem;
+        border-radius: 12px;
+        font-size: 1.05rem;
+    }
+}

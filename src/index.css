@@ -61,3 +61,35 @@ body {
     line-height: 1.5;
     font-size: 16px;
 }
+
+/* Mobile Small (320px) */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    body {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+/* Laptop and larger */
+@media screen and (min-width: 769px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
