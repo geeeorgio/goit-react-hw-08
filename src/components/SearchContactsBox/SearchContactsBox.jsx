@@ -1,7 +1,8 @@
+import { useDispatch } from "react-redux";
+import { LuUserRoundSearch } from "react-icons/lu";
 import { changeFilter } from "../../redux/filters/slice";
 import Container from "../Container/Container";
 import s from "./SearchContactsBox.module.css";
-import { useDispatch } from "react-redux";
 
 const SearchContactsBox = () => {
   const dispatch = useDispatch();
@@ -28,14 +29,17 @@ const SearchContactsBox = () => {
         <label className={s.label} htmlFor="searchBox">
           Find contacts
         </label>
-        <input
-          className={s.input}
-          type="text"
-          id="searchBox"
-          name="searchBox"
-          placeholder="Search for contacts..."
-          onChange={handleChange}
-        />
+        <div className={s.inputWrapper}>
+          <LuUserRoundSearch className={s.icon} />
+          <input
+            className={s.input}
+            type="text"
+            id="searchBox"
+            name="searchBox"
+            placeholder="Search for contacts..."
+            onChange={handleChange}
+          />
+        </div>
       </div>
     </Container>
   );

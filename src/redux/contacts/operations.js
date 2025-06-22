@@ -30,7 +30,6 @@ export const deleteContacts = createAsyncThunk(
   async (id, { rejectWithValue }) => {
     try {
       const { data } = await api.delete(`/contacts/${id}`);
-      console.log(data);
       return data;
     } catch (error) {
       return rejectWithValue(error.message);
@@ -40,9 +39,9 @@ export const deleteContacts = createAsyncThunk(
 
 export const updateContacts = createAsyncThunk(
   "contacts/updateContacts",
-  async (id, { rejectWithValue }) => {
+  async ({ id, ...rest }, { rejectWithValue }) => {
     try {
-      const { data } = await api.patch(`/contacts/${id}`);
+      const { data } = await api.patch(`/contacts/${id}`, rest);
       console.log(data);
       return data;
     } catch (error) {

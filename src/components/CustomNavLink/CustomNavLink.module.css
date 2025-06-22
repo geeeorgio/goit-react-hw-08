@@ -1,13 +1,29 @@
 .item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+
+    svg {
+        font-size: 1.2em;
+        flex-shrink: 0;
+        vertical-align: middle;
+        color: #969ea6;
+    }
 }
 
 .active {
     composes: item;
     background-color: #969ea6;
-    color: #fff
+    color: #fff;
+
+    svg {
+        color: #fff;
+    }
 }
 
 /* Mobile Small (320px) */

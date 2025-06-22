@@ -1,0 +1,116 @@
+.wrapper {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 222ms ease-in-out;
+    
+    &:hover {
+    background-color: #c0392b;
+}}
+
+.closeModalBtn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #7e7271;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 222ms ease-in-out;
+    
+    &:hover {
+    background-color: #5d5554;
+}}
+/* Mobile Medium (375px) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .wrapper {
+        padding: 1.25rem;
+        border-radius: 14px;
+        gap: 1.25rem;
+        max-width: 100%;
+    }
+
+    .text {
+        font-size: 1.1rem;
+        margin-bottom: 0.875rem;
+    }
+
+    .button,
+    .closeModalBtn {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+        border-radius: 10px;
+    }
+}
+
+/* Tablet (768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .wrapper {
+        padding: 1.375rem;
+        border-radius: 16px;
+        gap: 1.5rem;
+        max-width: 520px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .button,
+    .closeModalBtn {
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+}
+
+/* Laptop and larger (769px+) */
+@media screen and (min-width: 769px) {
+    .wrapper {
+        padding: 1.5rem;
+        border-radius: 16px;
+        gap: 1.5rem;
+        max-width: 480px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .button,
+    .closeModalBtn {
+        padding: 0.875rem;
+        border-radius: 12px;
+        font-size: 1.05rem;
+    }
+}

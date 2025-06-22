@@ -1,4 +1,6 @@
 import { useSelector } from "react-redux";
+import { BiSolidContact } from "react-icons/bi";
+import { IoHomeOutline } from "react-icons/io5";
 import { selectIsLoggedIn } from "../../redux/auth/selectors";
 import CustomNavLink from "../CustomNavLink/CustomNavLink";
 import Grid from "../Grid/Grid";
@@ -12,11 +14,17 @@ const Navigation = () => {
     <nav className={s.nav}>
       <Grid>
         <GridItem>
-          <CustomNavLink to="/">Home</CustomNavLink>
+          <CustomNavLink to="/">
+            <IoHomeOutline />
+            Home
+          </CustomNavLink>
         </GridItem>
         {isLoggedIn && (
           <GridItem>
-            <CustomNavLink to="/contacts">Contacts</CustomNavLink>
+            <CustomNavLink to="/contacts">
+              <BiSolidContact />
+              Contacts
+            </CustomNavLink>
           </GridItem>
         )}
       </Grid>

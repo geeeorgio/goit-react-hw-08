@@ -1,10 +1,12 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { LuPhone, LuUserRound, LuUserRoundPlus } from "react-icons/lu";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { contactsFormSchema } from "../../helpers/yupValidation";
 import { addContacts } from "../../redux/contacts/operations";
-import s from "./ContactsForm.module.css";
 import Button from "../Button/Button";
+
+import s from "./ContactsForm.module.css";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -30,17 +32,33 @@ const ContactForm = () => {
           <label className={s.label} htmlFor="name">
             Name
           </label>
-          <Field className={s.input} id="name" name="name" />
+          <div className={s.inputWrapper}>
+            <LuUserRound className={s.icon} />
+            <Field
+              className={s.input}
+              placeholder="contact name"
+              id="name"
+              name="name"
+            />
+          </div>
           <ErrorMessage className={s.error} name="name" component="div" />
 
           <label className={s.label} htmlFor="number">
             Number
           </label>
-          <Field className={s.input} id="number" name="number" />
+          <div className={s.inputWrapper}>
+            <LuPhone className={s.icon} />
+            <Field
+              className={s.input}
+              placeholder="000-000-0000"
+              id="number"
+              name="number"
+            />
+          </div>
           <ErrorMessage className={s.error} name="number" component="div" />
 
           <Button type="submit" className={s.button}>
-            Add contact
+            <LuUserRoundPlus /> Add contact
           </Button>
         </Form>
       </Formik>

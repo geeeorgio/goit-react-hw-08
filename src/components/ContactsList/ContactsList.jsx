@@ -5,6 +5,7 @@ import GridItem from "../GridItem/GridItem";
 import Contact from "../Contact/Contact";
 import Container from "../Container/Container";
 import NoContacts from "../NoContacts/NoContacts";
+
 import s from "./ContactsList.module.css";
 
 const ContactsList = () => {
